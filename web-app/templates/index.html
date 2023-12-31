@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Airbnbs in London</title>
+</head>
+
+<body>
+    <h1>Question 1: Which property size types are the most popular among guests, and how does the popularity vary across
+        different neighbourhoods?</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Neighbourhood</th>
+                <th>Room Type</th>
+                <th>Listing Count</th>
+                <th>Average Rating</th>
+                <th>Average Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#data}}
+            <tr>
+                <td>{{neighbourhood}}</td>
+                <td>{{room_type}}</td>
+                <td>{{count}}</td>
+                <td>{{average_rating}}</td>
+                <td>{{average_price}}</td>
+            </tr>
+            {{/data}}
+        </tbody>
+    </table>
+
+    <!-- <h1>Question 2: Which five best Airbnb properties for each neighbourhood in London per neighbourhood are affordable, taking into account
+        ratings and popularity(number of ratings more than 20)?</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property ID</th>
+                <th>Location</th>
+                <th>Neighbourhood</th>
+                <th>Price</th>
+                <th>Average Rating</th>
+                <th>Total Reviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#data}}
+            <tr>
+                <td>{{property_id}}</td>
+                <td>{{location}}</td>
+                <td>{{neighbourhood}}</td>
+                <td>{{price}}</td>
+                <td>{{average_rating}}</td>
+                <td>{{total_reviews}}</td>
+            </tr>
+            {{/data}}
+        </tbody>
+    </table> -->
+
+    <!-- <h1>Question 3: When a host has multiple properties listed on Airbnb, more than one, does the average rating and price for their
+        properties above or below the neighbourhoods average rating and price per room.</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Host ID</th>
+                <th>Host Name</th>
+                <th>Listings Count</th>
+                <th>Average Rating</th>
+                <th>Average Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#data}}
+            <tr>
+                <td>{{host_id}}</td>
+                <td>{{host_name}}</td>
+                <td>{{host_listings_count}}</td>
+                <td>{{average_rating}}</td>
+                <td>{{average_price}}</td>
+            </tr>
+            {{/data}}
+        </tbody>
+    </table> -->
+</body>
+
+</html>
